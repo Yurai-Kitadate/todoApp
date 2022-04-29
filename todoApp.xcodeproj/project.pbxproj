@@ -17,12 +17,16 @@
 		5E5122DE281673AC00388BD9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5122B4281673AA00388BD9 /* ContentView.swift */; };
 		5E5122DF281673AC00388BD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E5122B5281673AC00388BD9 /* Assets.xcassets */; };
 		5E5122E0281673AC00388BD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E5122B5281673AC00388BD9 /* Assets.xcassets */; };
-		5E5122F32816756400388BD9 /* struct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5122F22816756400388BD9 /* struct.swift */; };
-		5E5122F42816756400388BD9 /* struct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5122F22816756400388BD9 /* struct.swift */; };
 		5E5122F728167C0D00388BD9 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5E5122F528167C0D00388BD9 /* Model.xcdatamodeld */; };
 		5E5122F828167C0D00388BD9 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5E5122F528167C0D00388BD9 /* Model.xcdatamodeld */; };
 		5E5122FE28167CE300388BD9 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5122FD28167CE300388BD9 /* DataController.swift */; };
 		5E5122FF28167CE300388BD9 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5122FD28167CE300388BD9 /* DataController.swift */; };
+		5EAD83E9281C153200DC7850 /* EachTodoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAD83E8281C153100DC7850 /* EachTodoDetailView.swift */; };
+		5EAD83EA281C153200DC7850 /* EachTodoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAD83E8281C153100DC7850 /* EachTodoDetailView.swift */; };
+		5EAD83EC281C1CD300DC7850 /* ListTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAD83EB281C1CD300DC7850 /* ListTodoView.swift */; };
+		5EAD83ED281C1CD300DC7850 /* ListTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAD83EB281C1CD300DC7850 /* ListTodoView.swift */; };
+		5EE6FB35281BD4DA00504A75 /* DataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE6FB34281BD4DA00504A75 /* DataModels.swift */; };
+		5EE6FB36281BD4DA00504A75 /* DataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE6FB34281BD4DA00504A75 /* DataModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +48,7 @@
 
 /* Begin PBXFileReference section */
 		5E5122B3281673AA00388BD9 /* todoAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todoAppApp.swift; sourceTree = "<group>"; };
-		5E5122B4281673AA00388BD9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5E5122B4281673AA00388BD9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; };
 		5E5122B5281673AC00388BD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E5122BA281673AC00388BD9 /* todoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = todoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E5122C0281673AC00388BD9 /* todoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = todoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,9 +59,11 @@
 		5E5122D3281673AC00388BD9 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E5122D7281673AC00388BD9 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		5E5122D9281673AC00388BD9 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
-		5E5122F22816756400388BD9 /* struct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = struct.swift; sourceTree = "<group>"; };
 		5E5122F628167C0D00388BD9 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		5E5122FD28167CE300388BD9 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		5EAD83E8281C153100DC7850 /* EachTodoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EachTodoDetailView.swift; sourceTree = "<group>"; };
+		5EAD83EB281C1CD300DC7850 /* ListTodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTodoView.swift; sourceTree = "<group>"; };
+		5EE6FB34281BD4DA00504A75 /* DataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,10 +113,10 @@
 			isa = PBXGroup;
 			children = (
 				5E5122B3281673AA00388BD9 /* todoAppApp.swift */,
+				5EAD83EE281C1E8A00DC7850 /* Views */,
 				5E5122F528167C0D00388BD9 /* Model.xcdatamodeld */,
-				5E5122F22816756400388BD9 /* struct.swift */,
+				5EE6FB34281BD4DA00504A75 /* DataModels.swift */,
 				5E5122FD28167CE300388BD9 /* DataController.swift */,
-				5E5122B4281673AA00388BD9 /* ContentView.swift */,
 				5E5122B5281673AC00388BD9 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -151,6 +157,16 @@
 				5E5122D9281673AC00388BD9 /* Tests_macOSLaunchTests.swift */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		5EAD83EE281C1E8A00DC7850 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5EAD83E8281C153100DC7850 /* EachTodoDetailView.swift */,
+				5EAD83EB281C1CD300DC7850 /* ListTodoView.swift */,
+				5E5122B4281673AA00388BD9 /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,7 +250,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1320;
-				LastUpgradeCheck = 1320;
+				LastUpgradeCheck = 1330;
 				TargetAttributes = {
 					5E5122B9281673AC00388BD9 = {
 						CreatedOnToolsVersion = 13.2.1;
@@ -311,9 +327,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E5122F32816756400388BD9 /* struct.swift in Sources */,
 				5E5122FE28167CE300388BD9 /* DataController.swift in Sources */,
+				5EAD83EC281C1CD300DC7850 /* ListTodoView.swift in Sources */,
 				5E5122DD281673AC00388BD9 /* ContentView.swift in Sources */,
+				5EE6FB35281BD4DA00504A75 /* DataModels.swift in Sources */,
+				5EAD83E9281C153200DC7850 /* EachTodoDetailView.swift in Sources */,
 				5E5122F728167C0D00388BD9 /* Model.xcdatamodeld in Sources */,
 				5E5122DB281673AC00388BD9 /* todoAppApp.swift in Sources */,
 			);
@@ -323,9 +341,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E5122F42816756400388BD9 /* struct.swift in Sources */,
 				5E5122FF28167CE300388BD9 /* DataController.swift in Sources */,
+				5EAD83ED281C1CD300DC7850 /* ListTodoView.swift in Sources */,
 				5E5122DE281673AC00388BD9 /* ContentView.swift in Sources */,
+				5EE6FB36281BD4DA00504A75 /* DataModels.swift in Sources */,
+				5EAD83EA281C153200DC7850 /* EachTodoDetailView.swift in Sources */,
 				5E5122F828167C0D00388BD9 /* Model.xcdatamodeld in Sources */,
 				5E5122DC281673AC00388BD9 /* todoAppApp.swift in Sources */,
 			);
@@ -541,6 +561,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -567,6 +588,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;

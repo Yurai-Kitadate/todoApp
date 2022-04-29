@@ -7,7 +7,7 @@
 
 import SwiftUI
 @main
-struct todoAppApp: App {
+struct todoApp: App {
     @StateObject private var dataController = DataController()
     var body: some Scene {
         WindowGroup {
