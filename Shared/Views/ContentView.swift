@@ -6,8 +6,9 @@
 //
 
 import SwiftUI
+import CoreData
 struct ContentView: View {
-    func deleteTasks(offsets: IndexSet) {
+    func deleteTodos(offsets: IndexSet) {
         for index in offsets {
             moc.delete(todos[index])
         }
@@ -16,28 +17,33 @@ struct ContentView: View {
     @State private var title = ""
     @State private var about = ""
     @Environment(\.managedObjectContext) var moc
-    @FetchRequest(sortDescriptors: []) var todos: FetchedResults<Todos>
+    @FetchRequest(
+        sortDescriptors: [NSSortDescriptor(keyPath: \Todos.updatedAt!, ascending: true)],
+        predicate: nil
+    )  var todos: FetchedResults<Todos>
     var body: some View {
         VStack {
             NavigationView {
                 List{
-                    ForEach(todos, id: \.self) { todo in
+                    ForEach(todos) { todo in
                         
                         NavigationLink(destination: EachTodoDetailView(updatedAt:todo.updatedAt!,title:todo.title!,about:todo.about!)
                         ){
                             ListTodoView( updatedAt:todo.updatedAt!,
                                           title:todo.title!
                             )
-                        }.swipeActions(edge: .trailing) {
-                            Button(role: .destructive) {
-                                deleteTasks(offsets: IndexSet(integer: 0))
-                            } label: {
-                                Image(systemName: "trash.fill")
-                            }
                         }
-                    }
+                        //                        .swipeActions(edge: .trailing) {
+                        //                            Button(role: .destructive) {
+                        //                                deleteTasks(offsets: IndexSet(integer: 0))
+                        //                            } label: {
+                        //                                Image(systemName: "trash.fill")
+                        //                            }
+                        //                        }
+                    }.onDelete(perform: deleteTodos)
                 }
-            }.navigationTitle("Top View")
+            }
+            .navigationTitle("Top View")
             
             TextField("タイトル", text: $title)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
