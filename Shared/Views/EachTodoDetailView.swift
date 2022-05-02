@@ -16,6 +16,7 @@ struct EachTodoDetailView: View {
             VStack(alignment: .leading) {
                 Text(updatedAt)
                     .font(.caption)
+                    .padding()
                 Text(title)
                     .font(.body)
                     .fontWeight(.semibold)
@@ -24,6 +25,13 @@ struct EachTodoDetailView: View {
                 Spacer()
             }
             Spacer()
-        }.padding()
+        }.padding().navigationBarTitle(Text("Detail"), displayMode: .inline)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    NavigationLink(destination: AddTodoView()) {
+                        Text("Edit")
+                    }
+                }
+            }
     }
 }

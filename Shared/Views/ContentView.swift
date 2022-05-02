@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  Shared
-//
-//  Created by yurai on 2022/04/25.
-//
-
 import SwiftUI
 import CoreData
 struct ContentView: View {
@@ -32,34 +25,21 @@ struct ContentView: View {
                             ListTodoView( updatedAt:todo.updatedAt!,
                                           title:todo.title!
                             )
-                        }
-                        //                        .swipeActions(edge: .trailing) {
-                        //                            Button(role: .destructive) {
-                        //                                deleteTasks(offsets: IndexSet(integer: 0))
-                        //                            } label: {
-                        //                                Image(systemName: "trash.fill")
-                        //                            }
-                        //                        }
+                        }.navigationBarTitle(Text("Todos"), displayMode: .inline)
+                        
+                        
                     }.onDelete(perform: deleteTodos)
+                }.toolbar {
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        NavigationLink(destination: AddTodoView()) {
+                            Image(systemName: "plus")
+                        }
+                    }
                 }
             }
-            .navigationTitle("Top View")
             
-            TextField("タイトル", text: $title)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .padding()
-            TextField("内容", text: $about)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .padding()
-            Button("Add") {
-                let todo = Todos(context: moc)
-                todo.title = title
-                todo.about = about
-                todo.updatedAt = getNowClockString()
-                title = ""
-                about = ""
-                try? moc.save()
-            }
+            
+            
         }
     }
 }
@@ -69,11 +49,10 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
-func getNowClockString() -> String {
+func getNowTimeAsString() -> String {
     let formatter = DateFormatter()
-    formatter.dateFormat = "yyyy-MM-dd' 'HH:mm:ss"
+    formatter.dateFormat = "YYYY年M月d日(EEEEE) H時m分"
     let now = Date()
     return formatter.string(from: now)
 }
-
 

@@ -8,14 +8,14 @@
 import Foundation
 import SwiftUI
 import CoreData
-struct EditTodoView: View {
+struct AddTodoView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
     @State private var title = ""
     @State private var about = ""
     @Environment(\.managedObjectContext) var moc
     @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \Todos.updatedAt!, ascending: true)],
+        sortDescriptors: [NSSortDescriptor(keyPath: \Todos.updatedAt!, ascending: false)],
         predicate: nil
     )  var todos: FetchedResults<Todos>
     var body: some View {
@@ -23,9 +23,10 @@ struct EditTodoView: View {
             TextField("タイトル", text: $title)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
-            TextField("内容", text: $about)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .padding()
+
+            TextEditor(text: $about)
+                        .frame(width: 300, height: 200)
+                        .border(Color.gray, width: 1)
             Button(action: {
                 let todo = Todos(context: moc)
                 todo.title = title
@@ -49,4 +50,3 @@ struct EditTodoView: View {
         //        }
     }
 }
-

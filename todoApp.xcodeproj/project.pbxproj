@@ -25,6 +25,10 @@
 		5EAD83EA281C153200DC7850 /* EachTodoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAD83E8281C153100DC7850 /* EachTodoDetailView.swift */; };
 		5EAD83EC281C1CD300DC7850 /* ListTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAD83EB281C1CD300DC7850 /* ListTodoView.swift */; };
 		5EAD83ED281C1CD300DC7850 /* ListTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAD83EB281C1CD300DC7850 /* ListTodoView.swift */; };
+		5EAD83F3281CEA6500DC7850 /* EditTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAD83F2281CEA6500DC7850 /* EditTodoView.swift */; };
+		5EAD83F4281CEA6500DC7850 /* EditTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAD83F2281CEA6500DC7850 /* EditTodoView.swift */; };
+		5EDF56BA2820077B00137C9F /* AddTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDF56B92820077A00137C9F /* AddTodoView.swift */; };
+		5EDF56BB2820077B00137C9F /* AddTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDF56B92820077A00137C9F /* AddTodoView.swift */; };
 		5EE6FB35281BD4DA00504A75 /* DataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE6FB34281BD4DA00504A75 /* DataModels.swift */; };
 		5EE6FB36281BD4DA00504A75 /* DataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE6FB34281BD4DA00504A75 /* DataModels.swift */; };
 /* End PBXBuildFile section */
@@ -63,6 +67,8 @@
 		5E5122FD28167CE300388BD9 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		5EAD83E8281C153100DC7850 /* EachTodoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EachTodoDetailView.swift; sourceTree = "<group>"; };
 		5EAD83EB281C1CD300DC7850 /* ListTodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTodoView.swift; sourceTree = "<group>"; };
+		5EAD83F2281CEA6500DC7850 /* EditTodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTodoView.swift; sourceTree = "<group>"; };
+		5EDF56B92820077A00137C9F /* AddTodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoView.swift; sourceTree = "<group>"; };
 		5EE6FB34281BD4DA00504A75 /* DataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -163,6 +169,8 @@
 			isa = PBXGroup;
 			children = (
 				5EAD83E8281C153100DC7850 /* EachTodoDetailView.swift */,
+				5EDF56B92820077A00137C9F /* AddTodoView.swift */,
+				5EAD83F2281CEA6500DC7850 /* EditTodoView.swift */,
 				5EAD83EB281C1CD300DC7850 /* ListTodoView.swift */,
 				5E5122B4281673AA00388BD9 /* ContentView.swift */,
 			);
@@ -329,8 +337,10 @@
 			files = (
 				5E5122FE28167CE300388BD9 /* DataController.swift in Sources */,
 				5EAD83EC281C1CD300DC7850 /* ListTodoView.swift in Sources */,
+				5EDF56BA2820077B00137C9F /* AddTodoView.swift in Sources */,
 				5E5122DD281673AC00388BD9 /* ContentView.swift in Sources */,
 				5EE6FB35281BD4DA00504A75 /* DataModels.swift in Sources */,
+				5EAD83F3281CEA6500DC7850 /* EditTodoView.swift in Sources */,
 				5EAD83E9281C153200DC7850 /* EachTodoDetailView.swift in Sources */,
 				5E5122F728167C0D00388BD9 /* Model.xcdatamodeld in Sources */,
 				5E5122DB281673AC00388BD9 /* todoAppApp.swift in Sources */,
@@ -343,8 +353,10 @@
 			files = (
 				5E5122FF28167CE300388BD9 /* DataController.swift in Sources */,
 				5EAD83ED281C1CD300DC7850 /* ListTodoView.swift in Sources */,
+				5EDF56BB2820077B00137C9F /* AddTodoView.swift in Sources */,
 				5E5122DE281673AC00388BD9 /* ContentView.swift in Sources */,
 				5EE6FB36281BD4DA00504A75 /* DataModels.swift in Sources */,
+				5EAD83F4281CEA6500DC7850 /* EditTodoView.swift in Sources */,
 				5EAD83EA281C153200DC7850 /* EachTodoDetailView.swift in Sources */,
 				5E5122F828167C0D00388BD9 /* Model.xcdatamodeld in Sources */,
 				5E5122DC281673AC00388BD9 /* todoAppApp.swift in Sources */,
