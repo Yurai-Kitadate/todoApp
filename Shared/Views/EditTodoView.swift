@@ -23,9 +23,14 @@ struct EditTodoView: View {
             TextField("タイトル", text: $title)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
-            TextField("内容", text: $about)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .padding()
+                .onAppear {
+                            self.title = title                        }
+            TextEditor(text: $about)
+                        .frame(width: 300, height: 200)
+                        .border(Color.gray, width: 1)
+                .onAppear {
+                            self.about = about
+                        }
             Button(action: {
                 let todo = Todos(context: moc)
                 todo.title = title
@@ -37,7 +42,7 @@ struct EditTodoView: View {
                 self.presentationMode.wrappedValue.dismiss()
                 
             }) {
-                Text("Add")
+                Text("Edit")
             }
         }
         //        .toolbar {

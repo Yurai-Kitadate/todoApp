@@ -28,7 +28,7 @@ struct EachTodoDetailView: View {
         }.padding().navigationBarTitle(Text("Detail"), displayMode: .inline)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    NavigationLink(destination: AddTodoView()) {
+                    NavigationLink(destination: EditTodoView()) {
                         Text("Edit")
                     }
                 }

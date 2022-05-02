@@ -27,6 +27,7 @@ struct AddTodoView: View {
             TextEditor(text: $about)
                         .frame(width: 300, height: 200)
                         .border(Color.gray, width: 1)
+                        .onAppear()
             Button(action: {
                 let todo = Todos(context: moc)
                 todo.title = title
